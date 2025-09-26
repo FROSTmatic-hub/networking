@@ -30,11 +30,11 @@ nmap -A 192.168.31.159
 
 ```
 ## Observations
-nmap -sn: Nmap scan report for DESKTOP-TD9BS8A.lan (192.168.31.159) | Host is up (0.00041s latency).
-nmap -sS: open ports found [135/tcp, 139/tcp, 445/tcp, 5357/tcp] | With Win 10 Firewall settings set to off.
-nmap -sV: View output from images/
-nmap -A: OS details: Microsoft Windows 10 1507 - 1607
+- `nmap -sn`: Nmap scan report for DESKTOP-TD9BS8A.lan (192.168.31.159) | Host is up (0.00041s latency).
+- `nmap -sS`: open ports found [135/tcp, 139/tcp, 445/tcp, 5357/tcp] | With Win 10 Firewall settings set to off.
+- `nmap -sV`: View output from outputs/
+- `nmap -A`: OS details: Microsoft Windows 10 1507 - 1607
 
 # Lessons learned & next steps
-Practiced host discovery and scanning with nmap flags: -sn, -sS, -sV, -A.
-Learned to save scan outputs for documentation.
+- Practiced host discovery and scanning with nmap flags: -sn, -sS, -sV, -A.
+- Learned to save scan outputs for documentation.
