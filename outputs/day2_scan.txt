@@ -1,0 +1,14 @@
+# Nmap 7.95 scan initiated Fri Sep 26 19:07:01 2025 as: /usr/lib/nmap/nmap -sV -oN day2_scan.txt 192.168.31.159
+Nmap scan report for DESKTOP-TD9BS8A.lan (192.168.31.159)
+Host is up (0.00038s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE      VERSION
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+5357/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+MAC Address: 08:00:27:56:9F:80 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Service Info: Host: DESKTOP-TD9BS8A; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Sep 26 19:07:14 2025 -- 1 IP address (1 host up) scanned in 13.59 seconds
