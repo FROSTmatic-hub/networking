@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Sat Sep 27 19:18:17 2025 as: /usr/lib/nmap/nmap -p 139,445 --script smb-os-discovery,smbv2-info,smb-protocols,smb-enum-shares,smb-enum-users,smb-vuln-ms17-010 -oN /home/frost/Desktop/day3_failed_smb.txt 192.168.31.159
+NSE: failed to initialize the script engine:
+/usr/share/nmap/nse_main.lua:829: 'smbv2-info' did not match a category, filename, or directory
+stack traceback:
+	[C]: in function 'error'
+	/usr/share/nmap/nse_main.lua:829: in local 'get_chosen_scripts'
+	/usr/share/nmap/nse_main.lua:1364: in main chunk
+	[C]: in ?
+
+QUITTING!

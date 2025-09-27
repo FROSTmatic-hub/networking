@@ -1,0 +1,64 @@
+# Nmap 7.95 scan initiated Sat Sep 27 19:27:31 2025 as: /usr/lib/nmap/nmap -p 139,445 --script smb-* -oN /home/frost/Desktop/day3_smb_scans.txt 192.168.31.159
+Nmap scan report for DESKTOP-TD9BS8A.lan (192.168.31.159)
+Host is up (0.00061s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+445/tcp open  microsoft-ds
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+MAC Address: 08:00:27:56:9F:80 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Host script results:
+| smb-brute: 
+|   administrator:<blank> => Valid credentials, account disabled
+|_  guest:<blank> => Valid credentials, account disabled
+| smb-enum-shares: 
+|   note: ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)
+|   account_used: <blank>
+|   \\192.168.31.159\ADMIN$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\192.168.31.159\C$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: <none>
+|   \\192.168.31.159\IPC$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|_    Anonymous access: READ
+|_smb-flood: ERROR: Script execution failed (use -d to debug)
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2:0:2
+|     2:1:0
+|     3:0:0
+|     3:0:2
+|_    3:1:1
+|_smb-vuln-ms10-054: false
+| smb-mbenum: 
+|   Master Browser
+|     DESKTOP-TD9BS8A  10.0  
+|   Potential Browser
+|     DESKTOP-TD9BS8A  10.0  
+|   Server service
+|     DESKTOP-TD9BS8A  10.0  
+|   Windows NT/2000/XP/2003 server
+|     DESKTOP-TD9BS8A  10.0  
+|   Workstation
+|_    DESKTOP-TD9BS8A  10.0  
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+| smb-os-discovery: 
+|   OS: Windows 10 Pro 10240 (Windows 10 Pro 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_10::-
+|   Computer name: DESKTOP-TD9BS8A
+|   NetBIOS computer name: DESKTOP-TD9BS8A\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2025-09-27T07:01:21-07:00
+|_smb-print-text: false
+
+# Nmap done at Sat Sep 27 19:31:28 2025 -- 1 IP address (1 host up) scanned in 237.23 seconds

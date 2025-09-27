@@ -8,8 +8,7 @@ This repository contains my beginner-to-intermediate labs and notes for network 
 
 ## Contents
 - `networking/note-day1.md` - Day 1: ARP discovery & ping (with screenshot).  
-- `images/day1/` - Screenshots for Day 1.
-- `images/day2/` - Screenshots for Day 2.
+- `images/` - Screenshots for Days.
 - `outputs/` - Detailed outputs of scan in Text Format.
 
 ## How to use this repo
