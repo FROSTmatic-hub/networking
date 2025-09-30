@@ -71,12 +71,9 @@ C:\Users\Public\winPEAS.exe > C:\Users\Public\winpeas_output.txt
 3. transferred C:\Users\Public\winpeas_output.txt to attacker (Kali) and saved as:
 `outputs/day4_winpeas.txt`
 
-## What to look for in the output (how I triaged)
-
-### I searched the winPEAS output for the following high-value indicators:
-- Unquoted service paths (`unquoted` / `Unquoted Service Paths`)
-- Writable service binaries / folders (`write`, `writable`)
-- Plaintext credentials or config files (`password`, `plaintext`, `creds`)
-- AlwaysInstallElevated `HKLM`/`HKCU` values
-- Privileged rights (`SeImpersonatePrivilege`, `SeAssignPrimaryTokenPrivilege`)
-- Scheduled tasks running as `SYSTEM` and `world-writable` directories
+## Top findings from your `day4_winpeas.txt`:
+1. Unattend.xml contains stored credentials / AutoLogon — winPEAS found an Unattend file with password entries (winPEAS redacted the password). This is a clear credential leakage indicator.
+2. winPEAS reports the current user can Start/Stop multiple services (listed: `RmSvc`, `wcncsvc`, `BcastDVRUserService_43774`, `ConsentUxUserSvc_43774`, etc). That’s actionable for triggering behavior, and could become an escalation vector if a service runs something from a writable path.
+3. `C:\Users\frost` has AllAccess for `frost` and `C:\Users\Public` is Interactive with `WriteData/CreateFiles`, good for uploading PoC artifacts.
+4. `LSA Protection` and `CredentialGuard` not enabled.
+5. OneDrive folder or other AppData paths flagged as “Possible DLL Hijacking folder.”
