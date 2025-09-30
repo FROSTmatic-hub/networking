@@ -12,6 +12,7 @@
 
 ---
 
+
 ## Commands executed
 ```bash
 nmap -p 139,445 --script smb-os-discovery, smb-protocols, smb-enum-shares, smb-vuln-ms17-010 192.168.31.159
