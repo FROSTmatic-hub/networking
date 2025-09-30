@@ -7,7 +7,10 @@
 This repository contains my beginner-to-intermediate labs and notes for network penetration testing. It documents my Week 1 work: networking fundamentals, ARP discovery, packet captures, `nmap` reconnaissance, basic Linux usage, Metasploit workflow, and a safe EternalBlue lab performed in an isolated VM environment.
 
 ## Contents
-- `networking/note-day1.md` - Day 1: ARP discovery & ping (with screenshot).  
+- `networking/note-day1.md` - Day 1: ARP discovery & ping (with screenshot).
+- `networking/note-day2.md` - Day2: nmap scans, outputs, screenshots, and notes
+- `networking/note-day3.md` - Day3: SMB enumeration (nmap, enum4linux, smbclient)
+- `networking/note-day4.d` - Day4: winPEAS Phase B results — findings and remediation 
 - `images/` - Screenshots for Days.
 - `outputs/` - Detailed outputs of scan in Text Format.
 
