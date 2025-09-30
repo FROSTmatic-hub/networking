@@ -52,4 +52,31 @@ C:\> net localgroup administrators
 C:\> sc queryex type= service
 C:\> schtasks /query /fo LIST /v
 #Saved output to output/day4_meterpreter_basic.txt
+```
 
+### Phase B — Automated enumeration with winPEAS (Windows 11)
+
+**Tool used:** `winPEAS.exe` (uploaded to target and executed locally)  
+**Executed by:** Shaafi (FROSTmatic-hub)
+
+---
+
+## Commands / procedure used
+1. Uploaded `winPEAS.exe` to the target via Meterpreter / manual download.  
+2. Executed winPEAS and saved readable output to a file on the VM:
+```text
+# executed on target VM
+C:\Users\Public\winPEAS.exe > C:\Users\Public\winpeas_output.txt
+```
+3. transferred C:\Users\Public\winpeas_output.txt to attacker (Kali) and saved as:
+`outputs/day4_winpeas.txt`
+
+## What to look for in the output (how I triaged)
+
+### I searched the winPEAS output for the following high-value indicators:
+- Unquoted service paths (`unquoted` / `Unquoted Service Paths`)
+- Writable service binaries / folders (`write`, `writable`)
+- Plaintext credentials or config files (`password`, `plaintext`, `creds`)
+- AlwaysInstallElevated `HKLM`/`HKCU` values
+- Privileged rights (`SeImpersonatePrivilege`, `SeAssignPrimaryTokenPrivilege`)
+- Scheduled tasks running as `SYSTEM` and `world-writable` directories
