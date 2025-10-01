@@ -11,7 +11,7 @@ Attempt to demonstrate a safe, non-destructive proof-of-concept (PoC) for local 
 
 ---
 
-## Summary (one-line)
+## Summary
 User `win11\frost` has `SeImpersonatePrivilege` enabled (high-value). A SYSTEM scheduled task (`MicrosoftEdgeUpdateTaskMachineCore{GUID}`) was discovered and can be triggered, but the EdgeUpdate binary & folder are correctly protected (no write/modify by Users). `C:\Users\frost\Downloads` is writable and available as a staging area.
 
 ---
