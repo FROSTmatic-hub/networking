@@ -59,5 +59,5 @@ To build a small office network and host a webpage
     - PC1
 - ![PC0_web_test](/1.Networking-basics/packet-tracer-labs-beginner/Mini%20Web%20Network/PC0_web_browser_test.png)
 - ![PC1_web_test](/1.Networking-basics/packet-tracer-labs-beginner/Mini%20Web%20Network/PC1_web_browser_test.png)
-> Both PCs successfully ping the server and displayed the webpage.
+> Both PCs can successfully ping the server and display the webpage.
 
