@@ -18,21 +18,21 @@ To build and test a small networking using Cisco Packet Tracer.
 
 ### Step 2: Configuring PC1:
 - Configured PC1 with:
-| Setting         | Value         |
-|-----------------|---------------|
-| IP Address      | 192.168.10.10 |
-| Subnet Mask     | 255.255.255.0 |
-| Default Gateway | 192.168.10.1  |
-| DNS Server      | 8.8.8.8       |
+    | Setting         | Value         |
+    |-----------------|---------------|
+    | IP Address      | 192.168.10.10 |
+    | Subnet Mask     | 255.255.255.0 |
+    | Default Gateway | 192.168.10.1  |
+    | DNS Server      | 8.8.8.8       |
 
 ### Step 3: Configuring PC2:
 - Configured PC2 with:
-| Setting         | Value         |
-|-----------------|---------------|
-| IP Address      | 192.168.10.20 |
-| Subnet Mask     | 255.255.255.0 |
-| Default Gateway | 192.168.10.1  |
-| DNS Server      | 8.8.8.8       |
+    | Setting         | Value         |
+    |-----------------|---------------|
+    | IP Address      | 192.168.10.20 |
+    | Subnet Mask     | 255.255.255.0 |
+    | Default Gateway | 192.168.10.1  |
+    | DNS Server      | 8.8.8.8       |
 
 > Both PCs are now in the same subnet: `255.255.255.0`
 
